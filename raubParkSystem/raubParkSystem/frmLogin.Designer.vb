@@ -30,6 +30,8 @@ Partial Class frmLogin
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblRegister = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnLogin
@@ -110,6 +112,16 @@ Partial Class frmLogin
         Me.lblRegister.TabIndex = 7
         Me.lblRegister.Text = "Register"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.raubParkSystem.My.Resources.Resources.bg
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(923, 544)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -123,8 +135,10 @@ Partial Class frmLogin
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnLogin)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Name = "frmLogin"
         Me.Text = "Login"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -138,4 +152,5 @@ Partial Class frmLogin
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents lblRegister As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
