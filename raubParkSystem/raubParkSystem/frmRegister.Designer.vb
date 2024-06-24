@@ -36,6 +36,8 @@ Partial Class frmRegister
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblLogin
@@ -170,6 +172,16 @@ Partial Class frmRegister
         Me.Label7.TabIndex = 21
         Me.Label7.Text = "Name"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.raubParkSystem.My.Resources.Resources.bg
+        Me.PictureBox1.Location = New System.Drawing.Point(0, -1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(923, 544)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 24
+        Me.PictureBox1.TabStop = False
+        '
         'frmRegister
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -189,8 +201,10 @@ Partial Class frmRegister
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnRegister)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Name = "frmRegister"
         Me.Text = "Registration"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -210,4 +224,5 @@ Partial Class frmRegister
     Friend WithEvents Label6 As Label
     Friend WithEvents txtName As TextBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
